@@ -13,7 +13,7 @@ import { Background } from '../../game/Background';
 
 export const AuthPage: React.FC<any> = (props) => {
   const [showPassword, setShowPassword] = useState(false);
-  const [started, setStarted] = useState(true);
+  const [started, setStarted] = useState(false);
 
   return (
     <div
@@ -28,8 +28,7 @@ export const AuthPage: React.FC<any> = (props) => {
     >
       {!started && (
         <>
-          <Typography variant="h1">GREAT COLLECTION</Typography>
-          <Typography variant="h1">9999 in 1</Typography>
+          <Typography variant="h1">FL0PPY B1RD</Typography>
           <div
             style={{
               display: 'flex',
@@ -46,6 +45,7 @@ export const AuthPage: React.FC<any> = (props) => {
               placeholder="Enter your login here"
             />
             <TextField
+              type={showPassword ? 'password' : 'text'}
               id="outlined-adornment-password"
               placeholder="Enter your password here"
               label="Password"
