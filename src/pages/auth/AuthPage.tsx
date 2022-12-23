@@ -28,7 +28,7 @@ export const AuthPage: React.FC<any> = (props) => {
     >
       {!started && (
         <>
-          <Typography variant="h1">FL0PPY B1RD</Typography>
+          <Typography variant="h2">PRESS START</Typography>
           <div
             style={{
               display: 'flex',
